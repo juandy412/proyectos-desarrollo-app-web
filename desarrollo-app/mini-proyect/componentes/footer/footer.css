@@ -1,0 +1,40 @@
+
+.footer{
+    background: #1e1e1e;
+    color: #ccc;
+    padding: 25px 40px;
+    margin-top: 40px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    justify-content: center;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer p{
+    margin: 0;
+    font-size: 14px;
+}
+
+
+.social{
+    display: flex;
+    gap: 15px;
+}
+
+.social a{
+    text-decoration: none;
+    color: #ccc;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.social a:hover{
+    color: #ffd369;
+}

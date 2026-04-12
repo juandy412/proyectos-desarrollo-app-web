@@ -1,0 +1,25 @@
+body{
+    font-family: Arial;
+    margin:0;
+}
+
+.catalogo{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    margin-top:30px;
+}
+
+.card{
+    border:1px solid #ccc;
+    padding:20px;
+    width:200px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 2px 5px rgba(0,0,0,0.2);
+}
+
+.card span{
+    font-weight:bold;
+    color:green;
+}
