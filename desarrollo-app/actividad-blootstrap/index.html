@@ -4,13 +4,15 @@
 <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
 integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+<link rel="stylesheet" href="/js/script.js">
 </head>
 
 <body>
     <!--NAVBAR-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-info-subtle ">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand" href="#">MiApp</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -22,7 +24,7 @@ integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJ
                         <a class="nav-link active" aria-current="page" href="#">NOMBRE</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">LOGIN</a>
+                        <a class="nav-link" href="#">login</a>
                     </li>
 
                     <form class="d-flex" role="search">
@@ -37,24 +39,22 @@ integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJ
         <div class="row">
             <div class="col-md-6">
                 <div class="card">
-                    <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+                    <img src="https://picsum.photos/id/237/400/200" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card’s content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">PRODUCTO 1</h5>
+                        <p class="card-text">Descripcion del producto 1. </p>
+                        <a href="#" class="btn btn-primary btn-modal"> "ver mas"</a>
                     </div>
                 </div>
 
             </div>
             <div class="col-md-6">
                 <div class="card">
-                    <img src="https://picsum.photos/200" class="card-img-top" alt="...">
+                    <img src="https://picsum.photos/id/11/400/200" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card’s content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">PRODUCTO 2</h5>
+                        <p class="card-text">Descripcion del producto 2.</p>
+                        <a href="#" class="btn btn-primary btn-modal"> "ver mas"</a>
                     </div>
                 </div>
             </div>
@@ -78,26 +78,17 @@ integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJ
             </div>
         </div>
     </div>
-    <!--MODAL-->
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        Launch demo modal
-    </button>
 
     <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="miModal" >
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">informacion del producto</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    pagina emergente para la aplicacion
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    has hecho click en "ver mas"
                 </div>
             </div>
         </div>
