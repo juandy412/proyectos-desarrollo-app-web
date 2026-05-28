@@ -1,20 +1,37 @@
 <template>
-  <div class="vh-100 d-flex flex-column">
-    <!-- Barra superior -->
-    <SidebarComponent />
-
-    <!-- Contenido principal -->
-    <div class="flex-grow-1 p-4 bg-light">
-      <router-view />
-    </div>
+  <div class="container mt-5 col-md-4">
+    <h3>Iniciar Sesión</h3>
+    <input v-model="usuario" class="form-control mb-2" placeholder="Usuario" />
+    <input v-model="clave" type="password" class="form-control mb-2" placeholder="Contraseña" />
+    <button class="btn btn-primary w-100" @click="login">Entrar</button>
+    <p v-if="error" class="text-danger mt-2">{{ error }}</p>
   </div>
 </template>
 
 <script>
-import SidebarComponent from '@/components/SidebarComponent.vue';
+import usersData from '@/assets/usuarios.json'
 
 export default {
-  name: 'DashboardView',
-  components: { SidebarComponent }
+  data() {
+    return {
+      usuario: '',
+      clave: '',
+      error: ''
+    }
+  },
+  methods: {
+    login() {
+      const valido = usersData.find(
+        (u) => u.user === this.usuario && u.pass === this.clave
+      )
+
+      if (valido) {
+        localStorage.setItem('logueado', 'true')
+        this.$router.push('/dashboard')
+      } else {
+        this.error = 'Credenciales incorrectas'
+      }
+    }
+  }
 }
 </script>
